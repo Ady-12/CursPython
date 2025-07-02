@@ -93,7 +93,7 @@ class Carte:
     
     def este_groasa(self):
         if self.numar_pagini >300:
-            print("Este groasa")
+            return "Da"
 
 # Testare Exercițiul 4:
 carte1 = Carte("1984", "George Orwell", 350)
