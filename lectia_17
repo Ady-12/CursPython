@@ -92,10 +92,10 @@ class Carte:
         print(self.titlu , self.autor , self.numar_pagini)
     
     def este_groasa(self):
-        # COMPLETEAZĂ AICI - returnează True dacă cartea are peste 300 de pagini
-        pass
+        if self.numar_pagini >300:
+            print("Este groasa")
 
 # Testare Exercițiul 4:
-# carte1 = Carte("1984", "George Orwell", 350)
-# carte1.afiseaza_info()
-# print(f"Este o carte groasă? {carte1.este_groasa()}")
+carte1 = Carte("1984", "George Orwell", 350)
+carte1.afiseaza_info()
+print(f"Este o carte groasă? {carte1.este_groasa()}")
